@@ -1,0 +1,3052 @@
+{
+  "schemaVersion": 1,
+  "mode": "demo",
+  "clock": "2026-01-15T18:00:00Z",
+  "conversations": [
+    {
+      "id": "CALL-001",
+      "title": "Podwójna opłata za abonament",
+      "category": "Płatności",
+      "agent": "Konsultant DEMO 01",
+      "customer": "Klient syntetyczny 01",
+      "startedAt": "2026-01-15T08:00:00Z",
+      "duration": 91,
+      "sentiment": "negative",
+      "segments": [
+        {
+          "id": "C001-S1",
+          "speaker": "agent",
+          "start": 0,
+          "end": 13,
+          "text": "Dzień dobry, centrum obsługi DEMO, w czym mogę pomóc?"
+        },
+        {
+          "id": "C001-S2",
+          "speaker": "customer",
+          "start": 13,
+          "end": 26,
+          "text": "Dzień dobry. Dzwonię w sprawie: podwójna opłata za abonament. Potrzebuję pomocy."
+        },
+        {
+          "id": "C001-S3",
+          "speaker": "agent",
+          "start": 26,
+          "end": 39,
+          "text": "Rozumiem. Proszę opisać, co się wydarzyło."
+        },
+        {
+          "id": "C001-S4",
+          "speaker": "customer",
+          "start": 39,
+          "end": 52,
+          "text": "Sprawa jest dla mnie ważna. Chcę wiedzieć, jakie będą kolejne kroki."
+        },
+        {
+          "id": "C001-S5",
+          "speaker": "agent",
+          "start": 52,
+          "end": 65,
+          "text": "Przepraszam za podwójne naliczenie. Sprawdzę płatność i oddzwonię jutro do godziny 14:00."
+        },
+        {
+          "id": "C001-S6",
+          "speaker": "customer",
+          "start": 65,
+          "end": 78,
+          "text": "To kolejna pomyłka na fakturze. Jeśli nie zostanie wyjaśniona, złożę reklamację."
+        },
+        {
+          "id": "C001-S7",
+          "speaker": "agent",
+          "start": 78,
+          "end": 91,
+          "text": "Dziękuję za rozmowę. Życzę dobrego dnia."
+        }
+      ],
+      "audio": "/audio/call-001.m4a",
+      "analysis": {
+        "modelVersion": "deterministic-demo-v1",
+        "analyzedAt": "2026-01-15T18:00:00Z",
+        "score": 100,
+        "criteria": [
+          {
+            "name": "Powitanie",
+            "points": 20,
+            "max": 20,
+            "evidenceId": "C001-S1"
+          },
+          {
+            "name": "Empatia",
+            "points": 25,
+            "max": 25,
+            "evidenceId": "C001-S3"
+          },
+          {
+            "name": "Kolejne kroki",
+            "points": 35,
+            "max": 35,
+            "evidenceId": "C001-S5"
+          },
+          {
+            "name": "Zamknięcie",
+            "points": 20,
+            "max": 20,
+            "evidenceId": "C001-S7"
+          }
+        ],
+        "summary": "Temat: Podwójna opłata za abonament. Konsultant omówił kolejne kroki. Wynik działań po rozmowie nie jest potwierdzony.",
+        "risks": [
+          {
+            "label": "Ryzyko eskalacji",
+            "evidenceId": "C001-S6",
+            "text": "To kolejna pomyłka na fakturze. Jeśli nie zostanie wyjaśniona, złożę reklamację."
+          }
+        ],
+        "recommendations": [
+          "Potwierdź konkretny termin kolejnego kontaktu.",
+          "Sprawdź wykonanie deklaracji w zewnętrznym procesie; sama transkrypcja tego nie potwierdza."
+        ],
+        "sentiment": "negative",
+        "evidenceIds": [
+          "C001-S1",
+          "C001-S2",
+          "C001-S3",
+          "C001-S4",
+          "C001-S5",
+          "C001-S6",
+          "C001-S7"
+        ]
+      },
+      "promises": [
+        {
+          "id": "PROM-C001-S5",
+          "text": "Przepraszam za podwójne naliczenie. Sprawdzę płatność i oddzwonię jutro do godziny 14:00.",
+          "owner": "Konsultant DEMO 01",
+          "deadline": "jutro do godziny 14:00",
+          "confidence": 0.94,
+          "evidenceId": "C001-S5",
+          "status": "unverified"
+        }
+      ]
+    },
+    {
+      "id": "CALL-002",
+      "title": "Zmiana terminu dostawy",
+      "category": "Dostawa",
+      "agent": "Konsultant DEMO 02",
+      "customer": "Klient syntetyczny 02",
+      "startedAt": "2026-01-15T08:19:00Z",
+      "duration": 91,
+      "sentiment": "neutral",
+      "segments": [
+        {
+          "id": "C002-S1",
+          "speaker": "agent",
+          "start": 0,
+          "end": 13,
+          "text": "Dzień dobry, centrum obsługi DEMO, w czym mogę pomóc?"
+        },
+        {
+          "id": "C002-S2",
+          "speaker": "customer",
+          "start": 13,
+          "end": 26,
+          "text": "Dzień dobry. Dzwonię w sprawie: zmiana terminu dostawy. Potrzebuję pomocy."
+        },
+        {
+          "id": "C002-S3",
+          "speaker": "agent",
+          "start": 26,
+          "end": 39,
+          "text": "Rozumiem. Proszę opisać, co się wydarzyło."
+        },
+        {
+          "id": "C002-S4",
+          "speaker": "customer",
+          "start": 39,
+          "end": 52,
+          "text": "Sprawa jest dla mnie ważna. Chcę wiedzieć, jakie będą kolejne kroki."
+        },
+        {
+          "id": "C002-S5",
+          "speaker": "agent",
+          "start": 52,
+          "end": 65,
+          "text": "Prześlę potwierdzenie zmiany terminu e-mailem do końca dnia."
+        },
+        {
+          "id": "C002-S6",
+          "speaker": "customer",
+          "start": 65,
+          "end": 78,
+          "text": "Dobrze, będę czekać na potwierdzenie."
+        },
+        {
+          "id": "C002-S7",
+          "speaker": "agent",
+          "start": 78,
+          "end": 91,
+          "text": "Dziękuję za rozmowę. Życzę dobrego dnia."
+        }
+      ],
+      "audio": "/audio/call-002.m4a",
+      "analysis": {
+        "modelVersion": "deterministic-demo-v1",
+        "analyzedAt": "2026-01-15T18:00:00Z",
+        "score": 100,
+        "criteria": [
+          {
+            "name": "Powitanie",
+            "points": 20,
+            "max": 20,
+            "evidenceId": "C002-S1"
+          },
+          {
+            "name": "Empatia",
+            "points": 25,
+            "max": 25,
+            "evidenceId": "C002-S3"
+          },
+          {
+            "name": "Kolejne kroki",
+            "points": 35,
+            "max": 35,
+            "evidenceId": "C002-S5"
+          },
+          {
+            "name": "Zamknięcie",
+            "points": 20,
+            "max": 20,
+            "evidenceId": "C002-S7"
+          }
+        ],
+        "summary": "Temat: Zmiana terminu dostawy. Konsultant omówił kolejne kroki. Wynik działań po rozmowie nie jest potwierdzony.",
+        "risks": [],
+        "recommendations": [
+          "Utrzymaj jasne podsumowanie i potwierdzanie kolejnych kroków.",
+          "Sprawdź wykonanie deklaracji w zewnętrznym procesie; sama transkrypcja tego nie potwierdza."
+        ],
+        "sentiment": "neutral",
+        "evidenceIds": [
+          "C002-S1",
+          "C002-S2",
+          "C002-S3",
+          "C002-S4",
+          "C002-S5",
+          "C002-S6",
+          "C002-S7"
+        ]
+      },
+      "promises": [
+        {
+          "id": "PROM-C002-S5",
+          "text": "Prześlę potwierdzenie zmiany terminu e-mailem do końca dnia.",
+          "owner": "Konsultant DEMO 02",
+          "deadline": "do końca dnia",
+          "confidence": 0.94,
+          "evidenceId": "C002-S5",
+          "status": "unverified"
+        }
+      ]
+    },
+    {
+      "id": "CALL-003",
+      "title": "Aktywacja nowej usługi",
+      "category": "Usługi",
+      "agent": "Konsultant DEMO 03",
+      "customer": "Klient syntetyczny 03",
+      "startedAt": "2026-01-15T08:38:00Z",
+      "duration": 91,
+      "sentiment": "positive",
+      "segments": [
+        {
+          "id": "C003-S1",
+          "speaker": "agent",
+          "start": 0,
+          "end": 13,
+          "text": "Dzień dobry, centrum obsługi DEMO, w czym mogę pomóc?"
+        },
+        {
+          "id": "C003-S2",
+          "speaker": "customer",
+          "start": 13,
+          "end": 26,
+          "text": "Dzień dobry. Dzwonię w sprawie: aktywacja nowej usługi. Potrzebuję pomocy."
+        },
+        {
+          "id": "C003-S3",
+          "speaker": "agent",
+          "start": 26,
+          "end": 39,
+          "text": "Rozumiem. Proszę opisać, co się wydarzyło."
+        },
+        {
+          "id": "C003-S4",
+          "speaker": "customer",
+          "start": 39,
+          "end": 52,
+          "text": "Sprawa jest dla mnie ważna. Chcę wiedzieć, jakie będą kolejne kroki."
+        },
+        {
+          "id": "C003-S5",
+          "speaker": "agent",
+          "start": 52,
+          "end": 65,
+          "text": "Usługa jest już aktywna. Czy mogę pomóc w czymś jeszcze?"
+        },
+        {
+          "id": "C003-S6",
+          "speaker": "customer",
+          "start": 65,
+          "end": 78,
+          "text": "Nie, wszystko działa. Dziękuję za pomoc."
+        },
+        {
+          "id": "C003-S7",
+          "speaker": "agent",
+          "start": 78,
+          "end": 91,
+          "text": "Dziękuję za rozmowę. Życzę dobrego dnia."
+        }
+      ],
+      "audio": "/audio/call-003.m4a",
+      "analysis": {
+        "modelVersion": "deterministic-demo-v1",
+        "analyzedAt": "2026-01-15T18:00:00Z",
+        "score": 100,
+        "criteria": [
+          {
+            "name": "Powitanie",
+            "points": 20,
+            "max": 20,
+            "evidenceId": "C003-S1"
+          },
+          {
+            "name": "Empatia",
+            "points": 25,
+            "max": 25,
+            "evidenceId": "C003-S3"
+          },
+          {
+            "name": "Kolejne kroki",
+            "points": 35,
+            "max": 35,
+            "evidenceId": "C003-S5"
+          },
+          {
+            "name": "Zamknięcie",
+            "points": 20,
+            "max": 20,
+            "evidenceId": "C003-S7"
+          }
+        ],
+        "summary": "Temat: Aktywacja nowej usługi. Konsultant omówił kolejne kroki. Wynik działań po rozmowie nie jest potwierdzony.",
+        "risks": [],
+        "recommendations": [
+          "Utrzymaj jasne podsumowanie i potwierdzanie kolejnych kroków.",
+          "Sprawdź wykonanie deklaracji w zewnętrznym procesie; sama transkrypcja tego nie potwierdza."
+        ],
+        "sentiment": "positive",
+        "evidenceIds": [
+          "C003-S1",
+          "C003-S2",
+          "C003-S3",
+          "C003-S4",
+          "C003-S5",
+          "C003-S6",
+          "C003-S7"
+        ]
+      },
+      "promises": []
+    },
+    {
+      "id": "CALL-004",
+      "title": "Reklamacja jakości połączenia",
+      "category": "Reklamacje",
+      "agent": "Konsultant DEMO 04",
+      "customer": "Klient syntetyczny 04",
+      "startedAt": "2026-01-15T08:57:00Z",
+      "duration": 91,
+      "sentiment": "negative",
+      "segments": [
+        {
+          "id": "C004-S1",
+          "speaker": "agent",
+          "start": 0,
+          "end": 13,
+          "text": "Dzień dobry, centrum obsługi DEMO, w czym mogę pomóc?"
+        },
+        {
+          "id": "C004-S2",
+          "speaker": "customer",
+          "start": 13,
+          "end": 26,
+          "text": "Dzień dobry. Dzwonię w sprawie: reklamacja jakości połączenia. Potrzebuję pomocy."
+        },
+        {
+          "id": "C004-S3",
+          "speaker": "agent",
+          "start": 26,
+          "end": 39,
+          "text": "Proszę czekać na obsługę zgłoszenia."
+        },
+        {
+          "id": "C004-S4",
+          "speaker": "customer",
+          "start": 39,
+          "end": 52,
+          "text": "Sprawa jest dla mnie ważna. Chcę wiedzieć, jakie będą kolejne kroki."
+        },
+        {
+          "id": "C004-S5",
+          "speaker": "agent",
+          "start": 52,
+          "end": 65,
+          "text": "Zgłoszę problem do zespołu technicznego."
+        },
+        {
+          "id": "C004-S6",
+          "speaker": "customer",
+          "start": 65,
+          "end": 78,
+          "text": "Nie jestem zadowolony z obsługi. Problem wraca od tygodnia i rozważam rezygnację."
+        },
+        {
+          "id": "C004-S7",
+          "speaker": "agent",
+          "start": 78,
+          "end": 91,
+          "text": "Dziękuję za rozmowę. Życzę dobrego dnia."
+        }
+      ],
+      "audio": "/audio/call-004.m4a",
+      "analysis": {
+        "modelVersion": "deterministic-demo-v1",
+        "analyzedAt": "2026-01-15T18:00:00Z",
+        "score": 75,
+        "criteria": [
+          {
+            "name": "Powitanie",
+            "points": 20,
+            "max": 20,
+            "evidenceId": "C004-S1"
+          },
+          {
+            "name": "Empatia",
+            "points": 0,
+            "max": 25,
+            "evidenceId": null
+          },
+          {
+            "name": "Kolejne kroki",
+            "points": 35,
+            "max": 35,
+            "evidenceId": "C004-S5"
+          },
+          {
+            "name": "Zamknięcie",
+            "points": 20,
+            "max": 20,
+            "evidenceId": "C004-S7"
+          }
+        ],
+        "summary": "Temat: Reklamacja jakości połączenia. Konsultant omówił kolejne kroki. Wynik działań po rozmowie nie jest potwierdzony.",
+        "risks": [
+          {
+            "label": "Ryzyko eskalacji",
+            "evidenceId": "C004-S6",
+            "text": "Nie jestem zadowolony z obsługi. Problem wraca od tygodnia i rozważam rezygnację."
+          },
+          {
+            "label": "Brak terminu działania",
+            "evidenceId": "C004-S5",
+            "text": "Zgłoszę problem do zespołu technicznego."
+          }
+        ],
+        "recommendations": [
+          "Potwierdź konkretny termin kolejnego kontaktu.",
+          "Sprawdź wykonanie deklaracji w zewnętrznym procesie; sama transkrypcja tego nie potwierdza."
+        ],
+        "sentiment": "negative",
+        "evidenceIds": [
+          "C004-S1",
+          "C004-S2",
+          "C004-S3",
+          "C004-S4",
+          "C004-S5",
+          "C004-S6",
+          "C004-S7"
+        ]
+      },
+      "promises": [
+        {
+          "id": "PROM-C004-S5",
+          "text": "Zgłoszę problem do zespołu technicznego.",
+          "owner": "Konsultant DEMO 04",
+          "deadline": null,
+          "confidence": 0.85,
+          "evidenceId": "C004-S5",
+          "status": "unverified"
+        }
+      ]
+    },
+    {
+      "id": "CALL-005",
+      "title": "Pytanie o ofertę firmową",
+      "category": "Oferta",
+      "agent": "Konsultant DEMO 05",
+      "customer": "Klient syntetyczny 05",
+      "startedAt": "2026-01-15T09:16:00Z",
+      "duration": 91,
+      "sentiment": "neutral",
+      "segments": [
+        {
+          "id": "C005-S1",
+          "speaker": "agent",
+          "start": 0,
+          "end": 13,
+          "text": "Dzień dobry, centrum obsługi DEMO, w czym mogę pomóc?"
+        },
+        {
+          "id": "C005-S2",
+          "speaker": "customer",
+          "start": 13,
+          "end": 26,
+          "text": "Dzień dobry. Dzwonię w sprawie: pytanie o ofertę firmową. Potrzebuję pomocy."
+        },
+        {
+          "id": "C005-S3",
+          "speaker": "agent",
+          "start": 26,
+          "end": 39,
+          "text": "Rozumiem. Proszę opisać, co się wydarzyło."
+        },
+        {
+          "id": "C005-S4",
+          "speaker": "customer",
+          "start": 39,
+          "end": 52,
+          "text": "Sprawa jest dla mnie ważna. Chcę wiedzieć, jakie będą kolejne kroki."
+        },
+        {
+          "id": "C005-S5",
+          "speaker": "agent",
+          "start": 52,
+          "end": 65,
+          "text": "Może Pan skontaktować się z działem sprzedaży w przyszłym tygodniu."
+        },
+        {
+          "id": "C005-S6",
+          "speaker": "customer",
+          "start": 65,
+          "end": 78,
+          "text": "Rozumiem. To ja zdecyduję, kiedy zadzwonić."
+        },
+        {
+          "id": "C005-S7",
+          "speaker": "agent",
+          "start": 78,
+          "end": 91,
+          "text": "Dziękuję za rozmowę. Życzę dobrego dnia."
+        }
+      ],
+      "audio": "/audio/call-005.m4a",
+      "analysis": {
+        "modelVersion": "deterministic-demo-v1",
+        "analyzedAt": "2026-01-15T18:00:00Z",
+        "score": 75,
+        "criteria": [
+          {
+            "name": "Powitanie",
+            "points": 20,
+            "max": 20,
+            "evidenceId": "C005-S1"
+          },
+          {
+            "name": "Empatia",
+            "points": 25,
+            "max": 25,
+            "evidenceId": "C005-S3"
+          },
+          {
+            "name": "Kolejne kroki",
+            "points": 10,
+            "max": 35,
+            "evidenceId": null
+          },
+          {
+            "name": "Zamknięcie",
+            "points": 20,
+            "max": 20,
+            "evidenceId": "C005-S7"
+          }
+        ],
+        "summary": "Temat: Pytanie o ofertę firmową. Konsultant omówił kolejne kroki. Wynik działań po rozmowie nie jest potwierdzony.",
+        "risks": [],
+        "recommendations": [
+          "Utrzymaj jasne podsumowanie i potwierdzanie kolejnych kroków.",
+          "Sprawdź wykonanie deklaracji w zewnętrznym procesie; sama transkrypcja tego nie potwierdza."
+        ],
+        "sentiment": "neutral",
+        "evidenceIds": [
+          "C005-S1",
+          "C005-S2",
+          "C005-S3",
+          "C005-S4",
+          "C005-S5",
+          "C005-S6",
+          "C005-S7"
+        ]
+      },
+      "promises": []
+    },
+    {
+      "id": "CALL-006",
+      "title": "Zwrot zamówienia",
+      "category": "Zwroty",
+      "agent": "Konsultant DEMO 01",
+      "customer": "Klient syntetyczny 06",
+      "startedAt": "2026-01-15T09:35:00Z",
+      "duration": 91,
+      "sentiment": "positive",
+      "segments": [
+        {
+          "id": "C006-S1",
+          "speaker": "agent",
+          "start": 0,
+          "end": 13,
+          "text": "Dzień dobry, centrum obsługi DEMO, w czym mogę pomóc?"
+        },
+        {
+          "id": "C006-S2",
+          "speaker": "customer",
+          "start": 13,
+          "end": 26,
+          "text": "Dzień dobry. Dzwonię w sprawie: zwrot zamówienia. Potrzebuję pomocy."
+        },
+        {
+          "id": "C006-S3",
+          "speaker": "agent",
+          "start": 26,
+          "end": 39,
+          "text": "Rozumiem. Proszę opisać, co się wydarzyło."
+        },
+        {
+          "id": "C006-S4",
+          "speaker": "customer",
+          "start": 39,
+          "end": 52,
+          "text": "Sprawa jest dla mnie ważna. Chcę wiedzieć, jakie będą kolejne kroki."
+        },
+        {
+          "id": "C006-S5",
+          "speaker": "agent",
+          "start": 52,
+          "end": 65,
+          "text": "Wyślę instrukcję zwrotu w ciągu dwóch dni roboczych."
+        },
+        {
+          "id": "C006-S6",
+          "speaker": "customer",
+          "start": 65,
+          "end": 78,
+          "text": "Dziękuję, to wszystko wyjaśnia."
+        },
+        {
+          "id": "C006-S7",
+          "speaker": "agent",
+          "start": 78,
+          "end": 91,
+          "text": "Do usłyszenia. Życzę dobrego dnia."
+        }
+      ],
+      "audio": null,
+      "analysis": {
+        "modelVersion": "deterministic-demo-v1",
+        "analyzedAt": "2026-01-15T18:00:00Z",
+        "score": 80,
+        "criteria": [
+          {
+            "name": "Powitanie",
+            "points": 20,
+            "max": 20,
+            "evidenceId": "C006-S1"
+          },
+          {
+            "name": "Empatia",
+            "points": 25,
+            "max": 25,
+            "evidenceId": "C006-S3"
+          },
+          {
+            "name": "Kolejne kroki",
+            "points": 35,
+            "max": 35,
+            "evidenceId": "C006-S5"
+          },
+          {
+            "name": "Zamknięcie",
+            "points": 0,
+            "max": 20,
+            "evidenceId": null
+          }
+        ],
+        "summary": "Temat: Zwrot zamówienia. Konsultant omówił kolejne kroki. Wynik działań po rozmowie nie jest potwierdzony.",
+        "risks": [],
+        "recommendations": [
+          "Utrzymaj jasne podsumowanie i potwierdzanie kolejnych kroków.",
+          "Sprawdź wykonanie deklaracji w zewnętrznym procesie; sama transkrypcja tego nie potwierdza."
+        ],
+        "sentiment": "positive",
+        "evidenceIds": [
+          "C006-S1",
+          "C006-S2",
+          "C006-S3",
+          "C006-S4",
+          "C006-S5",
+          "C006-S6",
+          "C006-S7"
+        ]
+      },
+      "promises": [
+        {
+          "id": "PROM-C006-S5",
+          "text": "Wyślę instrukcję zwrotu w ciągu dwóch dni roboczych.",
+          "owner": "Konsultant DEMO 01",
+          "deadline": "w ciągu dwóch dni roboczych",
+          "confidence": 0.94,
+          "evidenceId": "C006-S5",
+          "status": "unverified"
+        }
+      ]
+    },
+    {
+      "id": "CALL-007",
+      "title": "Podwójna opłata za abonament",
+      "category": "Płatności",
+      "agent": "Konsultant DEMO 02",
+      "customer": "Klient syntetyczny 07",
+      "startedAt": "2026-01-15T09:54:00Z",
+      "duration": 91,
+      "sentiment": "negative",
+      "segments": [
+        {
+          "id": "C007-S1",
+          "speaker": "agent",
+          "start": 0,
+          "end": 13,
+          "text": "Dzień dobry, centrum obsługi DEMO, w czym mogę pomóc?"
+        },
+        {
+          "id": "C007-S2",
+          "speaker": "customer",
+          "start": 13,
+          "end": 26,
+          "text": "Dzień dobry. Dzwonię w sprawie: podwójna opłata za abonament. Potrzebuję pomocy."
+        },
+        {
+          "id": "C007-S3",
+          "speaker": "agent",
+          "start": 26,
+          "end": 39,
+          "text": "Rozumiem. Proszę opisać, co się wydarzyło."
+        },
+        {
+          "id": "C007-S4",
+          "speaker": "customer",
+          "start": 39,
+          "end": 52,
+          "text": "Sprawa jest dla mnie ważna. Chcę wiedzieć, jakie będą kolejne kroki."
+        },
+        {
+          "id": "C007-S5",
+          "speaker": "agent",
+          "start": 52,
+          "end": 65,
+          "text": "Przepraszam za podwójne naliczenie. Sprawdzę płatność i oddzwonię jutro do godziny 14:00."
+        },
+        {
+          "id": "C007-S6",
+          "speaker": "customer",
+          "start": 65,
+          "end": 78,
+          "text": "To kolejna pomyłka na fakturze. Jeśli nie zostanie wyjaśniona, złożę reklamację."
+        },
+        {
+          "id": "C007-S7",
+          "speaker": "agent",
+          "start": 78,
+          "end": 91,
+          "text": "Dziękuję za rozmowę. Życzę dobrego dnia."
+        }
+      ],
+      "audio": null,
+      "analysis": {
+        "modelVersion": "deterministic-demo-v1",
+        "analyzedAt": "2026-01-15T18:00:00Z",
+        "score": 100,
+        "criteria": [
+          {
+            "name": "Powitanie",
+            "points": 20,
+            "max": 20,
+            "evidenceId": "C007-S1"
+          },
+          {
+            "name": "Empatia",
+            "points": 25,
+            "max": 25,
+            "evidenceId": "C007-S3"
+          },
+          {
+            "name": "Kolejne kroki",
+            "points": 35,
+            "max": 35,
+            "evidenceId": "C007-S5"
+          },
+          {
+            "name": "Zamknięcie",
+            "points": 20,
+            "max": 20,
+            "evidenceId": "C007-S7"
+          }
+        ],
+        "summary": "Temat: Podwójna opłata za abonament. Konsultant omówił kolejne kroki. Wynik działań po rozmowie nie jest potwierdzony.",
+        "risks": [
+          {
+            "label": "Ryzyko eskalacji",
+            "evidenceId": "C007-S6",
+            "text": "To kolejna pomyłka na fakturze. Jeśli nie zostanie wyjaśniona, złożę reklamację."
+          }
+        ],
+        "recommendations": [
+          "Potwierdź konkretny termin kolejnego kontaktu.",
+          "Sprawdź wykonanie deklaracji w zewnętrznym procesie; sama transkrypcja tego nie potwierdza."
+        ],
+        "sentiment": "negative",
+        "evidenceIds": [
+          "C007-S1",
+          "C007-S2",
+          "C007-S3",
+          "C007-S4",
+          "C007-S5",
+          "C007-S6",
+          "C007-S7"
+        ]
+      },
+      "promises": [
+        {
+          "id": "PROM-C007-S5",
+          "text": "Przepraszam za podwójne naliczenie. Sprawdzę płatność i oddzwonię jutro do godziny 14:00.",
+          "owner": "Konsultant DEMO 02",
+          "deadline": "jutro do godziny 14:00",
+          "confidence": 0.94,
+          "evidenceId": "C007-S5",
+          "status": "unverified"
+        }
+      ]
+    },
+    {
+      "id": "CALL-008",
+      "title": "Zmiana terminu dostawy",
+      "category": "Dostawa",
+      "agent": "Konsultant DEMO 03",
+      "customer": "Klient syntetyczny 08",
+      "startedAt": "2026-01-15T10:13:00Z",
+      "duration": 91,
+      "sentiment": "neutral",
+      "segments": [
+        {
+          "id": "C008-S1",
+          "speaker": "agent",
+          "start": 0,
+          "end": 13,
+          "text": "Dzień dobry, centrum obsługi DEMO, w czym mogę pomóc?"
+        },
+        {
+          "id": "C008-S2",
+          "speaker": "customer",
+          "start": 13,
+          "end": 26,
+          "text": "Dzień dobry. Dzwonię w sprawie: zmiana terminu dostawy. Potrzebuję pomocy."
+        },
+        {
+          "id": "C008-S3",
+          "speaker": "agent",
+          "start": 26,
+          "end": 39,
+          "text": "Rozumiem. Proszę opisać, co się wydarzyło."
+        },
+        {
+          "id": "C008-S4",
+          "speaker": "customer",
+          "start": 39,
+          "end": 52,
+          "text": "Sprawa jest dla mnie ważna. Chcę wiedzieć, jakie będą kolejne kroki."
+        },
+        {
+          "id": "C008-S5",
+          "speaker": "agent",
+          "start": 52,
+          "end": 65,
+          "text": "Prześlę potwierdzenie zmiany terminu e-mailem do końca dnia."
+        },
+        {
+          "id": "C008-S6",
+          "speaker": "customer",
+          "start": 65,
+          "end": 78,
+          "text": "Dobrze, będę czekać na potwierdzenie."
+        },
+        {
+          "id": "C008-S7",
+          "speaker": "agent",
+          "start": 78,
+          "end": 91,
+          "text": "Dziękuję za rozmowę. Życzę dobrego dnia."
+        }
+      ],
+      "audio": null,
+      "analysis": {
+        "modelVersion": "deterministic-demo-v1",
+        "analyzedAt": "2026-01-15T18:00:00Z",
+        "score": 100,
+        "criteria": [
+          {
+            "name": "Powitanie",
+            "points": 20,
+            "max": 20,
+            "evidenceId": "C008-S1"
+          },
+          {
+            "name": "Empatia",
+            "points": 25,
+            "max": 25,
+            "evidenceId": "C008-S3"
+          },
+          {
+            "name": "Kolejne kroki",
+            "points": 35,
+            "max": 35,
+            "evidenceId": "C008-S5"
+          },
+          {
+            "name": "Zamknięcie",
+            "points": 20,
+            "max": 20,
+            "evidenceId": "C008-S7"
+          }
+        ],
+        "summary": "Temat: Zmiana terminu dostawy. Konsultant omówił kolejne kroki. Wynik działań po rozmowie nie jest potwierdzony.",
+        "risks": [],
+        "recommendations": [
+          "Utrzymaj jasne podsumowanie i potwierdzanie kolejnych kroków.",
+          "Sprawdź wykonanie deklaracji w zewnętrznym procesie; sama transkrypcja tego nie potwierdza."
+        ],
+        "sentiment": "neutral",
+        "evidenceIds": [
+          "C008-S1",
+          "C008-S2",
+          "C008-S3",
+          "C008-S4",
+          "C008-S5",
+          "C008-S6",
+          "C008-S7"
+        ]
+      },
+      "promises": [
+        {
+          "id": "PROM-C008-S5",
+          "text": "Prześlę potwierdzenie zmiany terminu e-mailem do końca dnia.",
+          "owner": "Konsultant DEMO 03",
+          "deadline": "do końca dnia",
+          "confidence": 0.94,
+          "evidenceId": "C008-S5",
+          "status": "unverified"
+        }
+      ]
+    },
+    {
+      "id": "CALL-009",
+      "title": "Aktywacja nowej usługi",
+      "category": "Usługi",
+      "agent": "Konsultant DEMO 04",
+      "customer": "Klient syntetyczny 09",
+      "startedAt": "2026-01-15T10:32:00Z",
+      "duration": 91,
+      "sentiment": "positive",
+      "segments": [
+        {
+          "id": "C009-S1",
+          "speaker": "agent",
+          "start": 0,
+          "end": 13,
+          "text": "Dzień dobry, centrum obsługi DEMO, w czym mogę pomóc?"
+        },
+        {
+          "id": "C009-S2",
+          "speaker": "customer",
+          "start": 13,
+          "end": 26,
+          "text": "Dzień dobry. Dzwonię w sprawie: aktywacja nowej usługi. Potrzebuję pomocy."
+        },
+        {
+          "id": "C009-S3",
+          "speaker": "agent",
+          "start": 26,
+          "end": 39,
+          "text": "Rozumiem. Proszę opisać, co się wydarzyło."
+        },
+        {
+          "id": "C009-S4",
+          "speaker": "customer",
+          "start": 39,
+          "end": 52,
+          "text": "Sprawa jest dla mnie ważna. Chcę wiedzieć, jakie będą kolejne kroki."
+        },
+        {
+          "id": "C009-S5",
+          "speaker": "agent",
+          "start": 52,
+          "end": 65,
+          "text": "Usługa jest już aktywna. Czy mogę pomóc w czymś jeszcze?"
+        },
+        {
+          "id": "C009-S6",
+          "speaker": "customer",
+          "start": 65,
+          "end": 78,
+          "text": "Nie, wszystko działa. Dziękuję za pomoc."
+        },
+        {
+          "id": "C009-S7",
+          "speaker": "agent",
+          "start": 78,
+          "end": 91,
+          "text": "Dziękuję za rozmowę. Życzę dobrego dnia."
+        }
+      ],
+      "audio": null,
+      "analysis": {
+        "modelVersion": "deterministic-demo-v1",
+        "analyzedAt": "2026-01-15T18:00:00Z",
+        "score": 100,
+        "criteria": [
+          {
+            "name": "Powitanie",
+            "points": 20,
+            "max": 20,
+            "evidenceId": "C009-S1"
+          },
+          {
+            "name": "Empatia",
+            "points": 25,
+            "max": 25,
+            "evidenceId": "C009-S3"
+          },
+          {
+            "name": "Kolejne kroki",
+            "points": 35,
+            "max": 35,
+            "evidenceId": "C009-S5"
+          },
+          {
+            "name": "Zamknięcie",
+            "points": 20,
+            "max": 20,
+            "evidenceId": "C009-S7"
+          }
+        ],
+        "summary": "Temat: Aktywacja nowej usługi. Konsultant omówił kolejne kroki. Wynik działań po rozmowie nie jest potwierdzony.",
+        "risks": [],
+        "recommendations": [
+          "Utrzymaj jasne podsumowanie i potwierdzanie kolejnych kroków.",
+          "Sprawdź wykonanie deklaracji w zewnętrznym procesie; sama transkrypcja tego nie potwierdza."
+        ],
+        "sentiment": "positive",
+        "evidenceIds": [
+          "C009-S1",
+          "C009-S2",
+          "C009-S3",
+          "C009-S4",
+          "C009-S5",
+          "C009-S6",
+          "C009-S7"
+        ]
+      },
+      "promises": []
+    },
+    {
+      "id": "CALL-010",
+      "title": "Reklamacja jakości połączenia",
+      "category": "Reklamacje",
+      "agent": "Konsultant DEMO 05",
+      "customer": "Klient syntetyczny 10",
+      "startedAt": "2026-01-15T10:51:00Z",
+      "duration": 91,
+      "sentiment": "negative",
+      "segments": [
+        {
+          "id": "C010-S1",
+          "speaker": "agent",
+          "start": 0,
+          "end": 13,
+          "text": "Dzień dobry, centrum obsługi DEMO, w czym mogę pomóc?"
+        },
+        {
+          "id": "C010-S2",
+          "speaker": "customer",
+          "start": 13,
+          "end": 26,
+          "text": "Dzień dobry. Dzwonię w sprawie: reklamacja jakości połączenia. Potrzebuję pomocy."
+        },
+        {
+          "id": "C010-S3",
+          "speaker": "agent",
+          "start": 26,
+          "end": 39,
+          "text": "Proszę czekać na obsługę zgłoszenia."
+        },
+        {
+          "id": "C010-S4",
+          "speaker": "customer",
+          "start": 39,
+          "end": 52,
+          "text": "Sprawa jest dla mnie ważna. Chcę wiedzieć, jakie będą kolejne kroki."
+        },
+        {
+          "id": "C010-S5",
+          "speaker": "agent",
+          "start": 52,
+          "end": 65,
+          "text": "Zgłoszę problem do zespołu technicznego."
+        },
+        {
+          "id": "C010-S6",
+          "speaker": "customer",
+          "start": 65,
+          "end": 78,
+          "text": "Nie jestem zadowolony z obsługi. Problem wraca od tygodnia i rozważam rezygnację."
+        },
+        {
+          "id": "C010-S7",
+          "speaker": "agent",
+          "start": 78,
+          "end": 91,
+          "text": "Dziękuję za rozmowę. Życzę dobrego dnia."
+        }
+      ],
+      "audio": null,
+      "analysis": {
+        "modelVersion": "deterministic-demo-v1",
+        "analyzedAt": "2026-01-15T18:00:00Z",
+        "score": 75,
+        "criteria": [
+          {
+            "name": "Powitanie",
+            "points": 20,
+            "max": 20,
+            "evidenceId": "C010-S1"
+          },
+          {
+            "name": "Empatia",
+            "points": 0,
+            "max": 25,
+            "evidenceId": null
+          },
+          {
+            "name": "Kolejne kroki",
+            "points": 35,
+            "max": 35,
+            "evidenceId": "C010-S5"
+          },
+          {
+            "name": "Zamknięcie",
+            "points": 20,
+            "max": 20,
+            "evidenceId": "C010-S7"
+          }
+        ],
+        "summary": "Temat: Reklamacja jakości połączenia. Konsultant omówił kolejne kroki. Wynik działań po rozmowie nie jest potwierdzony.",
+        "risks": [
+          {
+            "label": "Ryzyko eskalacji",
+            "evidenceId": "C010-S6",
+            "text": "Nie jestem zadowolony z obsługi. Problem wraca od tygodnia i rozważam rezygnację."
+          },
+          {
+            "label": "Brak terminu działania",
+            "evidenceId": "C010-S5",
+            "text": "Zgłoszę problem do zespołu technicznego."
+          }
+        ],
+        "recommendations": [
+          "Potwierdź konkretny termin kolejnego kontaktu.",
+          "Sprawdź wykonanie deklaracji w zewnętrznym procesie; sama transkrypcja tego nie potwierdza."
+        ],
+        "sentiment": "negative",
+        "evidenceIds": [
+          "C010-S1",
+          "C010-S2",
+          "C010-S3",
+          "C010-S4",
+          "C010-S5",
+          "C010-S6",
+          "C010-S7"
+        ]
+      },
+      "promises": [
+        {
+          "id": "PROM-C010-S5",
+          "text": "Zgłoszę problem do zespołu technicznego.",
+          "owner": "Konsultant DEMO 05",
+          "deadline": null,
+          "confidence": 0.85,
+          "evidenceId": "C010-S5",
+          "status": "unverified"
+        }
+      ]
+    },
+    {
+      "id": "CALL-011",
+      "title": "Pytanie o ofertę firmową",
+      "category": "Oferta",
+      "agent": "Konsultant DEMO 01",
+      "customer": "Klient syntetyczny 11",
+      "startedAt": "2026-01-15T11:10:00Z",
+      "duration": 91,
+      "sentiment": "neutral",
+      "segments": [
+        {
+          "id": "C011-S1",
+          "speaker": "agent",
+          "start": 0,
+          "end": 13,
+          "text": "Dzień dobry, centrum obsługi DEMO, w czym mogę pomóc?"
+        },
+        {
+          "id": "C011-S2",
+          "speaker": "customer",
+          "start": 13,
+          "end": 26,
+          "text": "Dzień dobry. Dzwonię w sprawie: pytanie o ofertę firmową. Potrzebuję pomocy."
+        },
+        {
+          "id": "C011-S3",
+          "speaker": "agent",
+          "start": 26,
+          "end": 39,
+          "text": "Rozumiem. Proszę opisać, co się wydarzyło."
+        },
+        {
+          "id": "C011-S4",
+          "speaker": "customer",
+          "start": 39,
+          "end": 52,
+          "text": "Sprawa jest dla mnie ważna. Chcę wiedzieć, jakie będą kolejne kroki."
+        },
+        {
+          "id": "C011-S5",
+          "speaker": "agent",
+          "start": 52,
+          "end": 65,
+          "text": "Może Pan skontaktować się z działem sprzedaży w przyszłym tygodniu."
+        },
+        {
+          "id": "C011-S6",
+          "speaker": "customer",
+          "start": 65,
+          "end": 78,
+          "text": "Rozumiem. To ja zdecyduję, kiedy zadzwonić."
+        },
+        {
+          "id": "C011-S7",
+          "speaker": "agent",
+          "start": 78,
+          "end": 91,
+          "text": "Dziękuję za rozmowę. Życzę dobrego dnia."
+        }
+      ],
+      "audio": null,
+      "analysis": {
+        "modelVersion": "deterministic-demo-v1",
+        "analyzedAt": "2026-01-15T18:00:00Z",
+        "score": 75,
+        "criteria": [
+          {
+            "name": "Powitanie",
+            "points": 20,
+            "max": 20,
+            "evidenceId": "C011-S1"
+          },
+          {
+            "name": "Empatia",
+            "points": 25,
+            "max": 25,
+            "evidenceId": "C011-S3"
+          },
+          {
+            "name": "Kolejne kroki",
+            "points": 10,
+            "max": 35,
+            "evidenceId": null
+          },
+          {
+            "name": "Zamknięcie",
+            "points": 20,
+            "max": 20,
+            "evidenceId": "C011-S7"
+          }
+        ],
+        "summary": "Temat: Pytanie o ofertę firmową. Konsultant omówił kolejne kroki. Wynik działań po rozmowie nie jest potwierdzony.",
+        "risks": [],
+        "recommendations": [
+          "Utrzymaj jasne podsumowanie i potwierdzanie kolejnych kroków.",
+          "Sprawdź wykonanie deklaracji w zewnętrznym procesie; sama transkrypcja tego nie potwierdza."
+        ],
+        "sentiment": "neutral",
+        "evidenceIds": [
+          "C011-S1",
+          "C011-S2",
+          "C011-S3",
+          "C011-S4",
+          "C011-S5",
+          "C011-S6",
+          "C011-S7"
+        ]
+      },
+      "promises": []
+    },
+    {
+      "id": "CALL-012",
+      "title": "Zwrot zamówienia",
+      "category": "Zwroty",
+      "agent": "Konsultant DEMO 02",
+      "customer": "Klient syntetyczny 12",
+      "startedAt": "2026-01-15T11:29:00Z",
+      "duration": 91,
+      "sentiment": "positive",
+      "segments": [
+        {
+          "id": "C012-S1",
+          "speaker": "agent",
+          "start": 0,
+          "end": 13,
+          "text": "Dzień dobry, centrum obsługi DEMO, w czym mogę pomóc?"
+        },
+        {
+          "id": "C012-S2",
+          "speaker": "customer",
+          "start": 13,
+          "end": 26,
+          "text": "Dzień dobry. Dzwonię w sprawie: zwrot zamówienia. Potrzebuję pomocy."
+        },
+        {
+          "id": "C012-S3",
+          "speaker": "agent",
+          "start": 26,
+          "end": 39,
+          "text": "Rozumiem. Proszę opisać, co się wydarzyło."
+        },
+        {
+          "id": "C012-S4",
+          "speaker": "customer",
+          "start": 39,
+          "end": 52,
+          "text": "Sprawa jest dla mnie ważna. Chcę wiedzieć, jakie będą kolejne kroki."
+        },
+        {
+          "id": "C012-S5",
+          "speaker": "agent",
+          "start": 52,
+          "end": 65,
+          "text": "Wyślę instrukcję zwrotu w ciągu dwóch dni roboczych."
+        },
+        {
+          "id": "C012-S6",
+          "speaker": "customer",
+          "start": 65,
+          "end": 78,
+          "text": "Dziękuję, to wszystko wyjaśnia."
+        },
+        {
+          "id": "C012-S7",
+          "speaker": "agent",
+          "start": 78,
+          "end": 91,
+          "text": "Do usłyszenia. Życzę dobrego dnia."
+        }
+      ],
+      "audio": null,
+      "analysis": {
+        "modelVersion": "deterministic-demo-v1",
+        "analyzedAt": "2026-01-15T18:00:00Z",
+        "score": 80,
+        "criteria": [
+          {
+            "name": "Powitanie",
+            "points": 20,
+            "max": 20,
+            "evidenceId": "C012-S1"
+          },
+          {
+            "name": "Empatia",
+            "points": 25,
+            "max": 25,
+            "evidenceId": "C012-S3"
+          },
+          {
+            "name": "Kolejne kroki",
+            "points": 35,
+            "max": 35,
+            "evidenceId": "C012-S5"
+          },
+          {
+            "name": "Zamknięcie",
+            "points": 0,
+            "max": 20,
+            "evidenceId": null
+          }
+        ],
+        "summary": "Temat: Zwrot zamówienia. Konsultant omówił kolejne kroki. Wynik działań po rozmowie nie jest potwierdzony.",
+        "risks": [],
+        "recommendations": [
+          "Utrzymaj jasne podsumowanie i potwierdzanie kolejnych kroków.",
+          "Sprawdź wykonanie deklaracji w zewnętrznym procesie; sama transkrypcja tego nie potwierdza."
+        ],
+        "sentiment": "positive",
+        "evidenceIds": [
+          "C012-S1",
+          "C012-S2",
+          "C012-S3",
+          "C012-S4",
+          "C012-S5",
+          "C012-S6",
+          "C012-S7"
+        ]
+      },
+      "promises": [
+        {
+          "id": "PROM-C012-S5",
+          "text": "Wyślę instrukcję zwrotu w ciągu dwóch dni roboczych.",
+          "owner": "Konsultant DEMO 02",
+          "deadline": "w ciągu dwóch dni roboczych",
+          "confidence": 0.94,
+          "evidenceId": "C012-S5",
+          "status": "unverified"
+        }
+      ]
+    },
+    {
+      "id": "CALL-013",
+      "title": "Podwójna opłata za abonament",
+      "category": "Płatności",
+      "agent": "Konsultant DEMO 03",
+      "customer": "Klient syntetyczny 13",
+      "startedAt": "2026-01-15T11:48:00Z",
+      "duration": 91,
+      "sentiment": "negative",
+      "segments": [
+        {
+          "id": "C013-S1",
+          "speaker": "agent",
+          "start": 0,
+          "end": 13,
+          "text": "Dzień dobry, centrum obsługi DEMO, w czym mogę pomóc?"
+        },
+        {
+          "id": "C013-S2",
+          "speaker": "customer",
+          "start": 13,
+          "end": 26,
+          "text": "Dzień dobry. Dzwonię w sprawie: podwójna opłata za abonament. Potrzebuję pomocy."
+        },
+        {
+          "id": "C013-S3",
+          "speaker": "agent",
+          "start": 26,
+          "end": 39,
+          "text": "Rozumiem. Proszę opisać, co się wydarzyło."
+        },
+        {
+          "id": "C013-S4",
+          "speaker": "customer",
+          "start": 39,
+          "end": 52,
+          "text": "Sprawa jest dla mnie ważna. Chcę wiedzieć, jakie będą kolejne kroki."
+        },
+        {
+          "id": "C013-S5",
+          "speaker": "agent",
+          "start": 52,
+          "end": 65,
+          "text": "Przepraszam za podwójne naliczenie. Sprawdzę płatność i oddzwonię jutro do godziny 14:00."
+        },
+        {
+          "id": "C013-S6",
+          "speaker": "customer",
+          "start": 65,
+          "end": 78,
+          "text": "To kolejna pomyłka na fakturze. Jeśli nie zostanie wyjaśniona, złożę reklamację."
+        },
+        {
+          "id": "C013-S7",
+          "speaker": "agent",
+          "start": 78,
+          "end": 91,
+          "text": "Dziękuję za rozmowę. Życzę dobrego dnia."
+        }
+      ],
+      "audio": null,
+      "analysis": {
+        "modelVersion": "deterministic-demo-v1",
+        "analyzedAt": "2026-01-15T18:00:00Z",
+        "score": 100,
+        "criteria": [
+          {
+            "name": "Powitanie",
+            "points": 20,
+            "max": 20,
+            "evidenceId": "C013-S1"
+          },
+          {
+            "name": "Empatia",
+            "points": 25,
+            "max": 25,
+            "evidenceId": "C013-S3"
+          },
+          {
+            "name": "Kolejne kroki",
+            "points": 35,
+            "max": 35,
+            "evidenceId": "C013-S5"
+          },
+          {
+            "name": "Zamknięcie",
+            "points": 20,
+            "max": 20,
+            "evidenceId": "C013-S7"
+          }
+        ],
+        "summary": "Temat: Podwójna opłata za abonament. Konsultant omówił kolejne kroki. Wynik działań po rozmowie nie jest potwierdzony.",
+        "risks": [
+          {
+            "label": "Ryzyko eskalacji",
+            "evidenceId": "C013-S6",
+            "text": "To kolejna pomyłka na fakturze. Jeśli nie zostanie wyjaśniona, złożę reklamację."
+          }
+        ],
+        "recommendations": [
+          "Potwierdź konkretny termin kolejnego kontaktu.",
+          "Sprawdź wykonanie deklaracji w zewnętrznym procesie; sama transkrypcja tego nie potwierdza."
+        ],
+        "sentiment": "negative",
+        "evidenceIds": [
+          "C013-S1",
+          "C013-S2",
+          "C013-S3",
+          "C013-S4",
+          "C013-S5",
+          "C013-S6",
+          "C013-S7"
+        ]
+      },
+      "promises": [
+        {
+          "id": "PROM-C013-S5",
+          "text": "Przepraszam za podwójne naliczenie. Sprawdzę płatność i oddzwonię jutro do godziny 14:00.",
+          "owner": "Konsultant DEMO 03",
+          "deadline": "jutro do godziny 14:00",
+          "confidence": 0.94,
+          "evidenceId": "C013-S5",
+          "status": "unverified"
+        }
+      ]
+    },
+    {
+      "id": "CALL-014",
+      "title": "Zmiana terminu dostawy",
+      "category": "Dostawa",
+      "agent": "Konsultant DEMO 04",
+      "customer": "Klient syntetyczny 14",
+      "startedAt": "2026-01-15T12:07:00Z",
+      "duration": 91,
+      "sentiment": "neutral",
+      "segments": [
+        {
+          "id": "C014-S1",
+          "speaker": "agent",
+          "start": 0,
+          "end": 13,
+          "text": "Dzień dobry, centrum obsługi DEMO, w czym mogę pomóc?"
+        },
+        {
+          "id": "C014-S2",
+          "speaker": "customer",
+          "start": 13,
+          "end": 26,
+          "text": "Dzień dobry. Dzwonię w sprawie: zmiana terminu dostawy. Potrzebuję pomocy."
+        },
+        {
+          "id": "C014-S3",
+          "speaker": "agent",
+          "start": 26,
+          "end": 39,
+          "text": "Rozumiem. Proszę opisać, co się wydarzyło."
+        },
+        {
+          "id": "C014-S4",
+          "speaker": "customer",
+          "start": 39,
+          "end": 52,
+          "text": "Sprawa jest dla mnie ważna. Chcę wiedzieć, jakie będą kolejne kroki."
+        },
+        {
+          "id": "C014-S5",
+          "speaker": "agent",
+          "start": 52,
+          "end": 65,
+          "text": "Prześlę potwierdzenie zmiany terminu e-mailem do końca dnia."
+        },
+        {
+          "id": "C014-S6",
+          "speaker": "customer",
+          "start": 65,
+          "end": 78,
+          "text": "Dobrze, będę czekać na potwierdzenie."
+        },
+        {
+          "id": "C014-S7",
+          "speaker": "agent",
+          "start": 78,
+          "end": 91,
+          "text": "Dziękuję za rozmowę. Życzę dobrego dnia."
+        }
+      ],
+      "audio": null,
+      "analysis": {
+        "modelVersion": "deterministic-demo-v1",
+        "analyzedAt": "2026-01-15T18:00:00Z",
+        "score": 100,
+        "criteria": [
+          {
+            "name": "Powitanie",
+            "points": 20,
+            "max": 20,
+            "evidenceId": "C014-S1"
+          },
+          {
+            "name": "Empatia",
+            "points": 25,
+            "max": 25,
+            "evidenceId": "C014-S3"
+          },
+          {
+            "name": "Kolejne kroki",
+            "points": 35,
+            "max": 35,
+            "evidenceId": "C014-S5"
+          },
+          {
+            "name": "Zamknięcie",
+            "points": 20,
+            "max": 20,
+            "evidenceId": "C014-S7"
+          }
+        ],
+        "summary": "Temat: Zmiana terminu dostawy. Konsultant omówił kolejne kroki. Wynik działań po rozmowie nie jest potwierdzony.",
+        "risks": [],
+        "recommendations": [
+          "Utrzymaj jasne podsumowanie i potwierdzanie kolejnych kroków.",
+          "Sprawdź wykonanie deklaracji w zewnętrznym procesie; sama transkrypcja tego nie potwierdza."
+        ],
+        "sentiment": "neutral",
+        "evidenceIds": [
+          "C014-S1",
+          "C014-S2",
+          "C014-S3",
+          "C014-S4",
+          "C014-S5",
+          "C014-S6",
+          "C014-S7"
+        ]
+      },
+      "promises": [
+        {
+          "id": "PROM-C014-S5",
+          "text": "Prześlę potwierdzenie zmiany terminu e-mailem do końca dnia.",
+          "owner": "Konsultant DEMO 04",
+          "deadline": "do końca dnia",
+          "confidence": 0.94,
+          "evidenceId": "C014-S5",
+          "status": "unverified"
+        }
+      ]
+    },
+    {
+      "id": "CALL-015",
+      "title": "Aktywacja nowej usługi",
+      "category": "Usługi",
+      "agent": "Konsultant DEMO 05",
+      "customer": "Klient syntetyczny 15",
+      "startedAt": "2026-01-15T12:26:00Z",
+      "duration": 91,
+      "sentiment": "positive",
+      "segments": [
+        {
+          "id": "C015-S1",
+          "speaker": "agent",
+          "start": 0,
+          "end": 13,
+          "text": "Dzień dobry, centrum obsługi DEMO, w czym mogę pomóc?"
+        },
+        {
+          "id": "C015-S2",
+          "speaker": "customer",
+          "start": 13,
+          "end": 26,
+          "text": "Dzień dobry. Dzwonię w sprawie: aktywacja nowej usługi. Potrzebuję pomocy."
+        },
+        {
+          "id": "C015-S3",
+          "speaker": "agent",
+          "start": 26,
+          "end": 39,
+          "text": "Rozumiem. Proszę opisać, co się wydarzyło."
+        },
+        {
+          "id": "C015-S4",
+          "speaker": "customer",
+          "start": 39,
+          "end": 52,
+          "text": "Sprawa jest dla mnie ważna. Chcę wiedzieć, jakie będą kolejne kroki."
+        },
+        {
+          "id": "C015-S5",
+          "speaker": "agent",
+          "start": 52,
+          "end": 65,
+          "text": "Usługa jest już aktywna. Czy mogę pomóc w czymś jeszcze?"
+        },
+        {
+          "id": "C015-S6",
+          "speaker": "customer",
+          "start": 65,
+          "end": 78,
+          "text": "Nie, wszystko działa. Dziękuję za pomoc."
+        },
+        {
+          "id": "C015-S7",
+          "speaker": "agent",
+          "start": 78,
+          "end": 91,
+          "text": "Dziękuję za rozmowę. Życzę dobrego dnia."
+        }
+      ],
+      "audio": null,
+      "analysis": {
+        "modelVersion": "deterministic-demo-v1",
+        "analyzedAt": "2026-01-15T18:00:00Z",
+        "score": 100,
+        "criteria": [
+          {
+            "name": "Powitanie",
+            "points": 20,
+            "max": 20,
+            "evidenceId": "C015-S1"
+          },
+          {
+            "name": "Empatia",
+            "points": 25,
+            "max": 25,
+            "evidenceId": "C015-S3"
+          },
+          {
+            "name": "Kolejne kroki",
+            "points": 35,
+            "max": 35,
+            "evidenceId": "C015-S5"
+          },
+          {
+            "name": "Zamknięcie",
+            "points": 20,
+            "max": 20,
+            "evidenceId": "C015-S7"
+          }
+        ],
+        "summary": "Temat: Aktywacja nowej usługi. Konsultant omówił kolejne kroki. Wynik działań po rozmowie nie jest potwierdzony.",
+        "risks": [],
+        "recommendations": [
+          "Utrzymaj jasne podsumowanie i potwierdzanie kolejnych kroków.",
+          "Sprawdź wykonanie deklaracji w zewnętrznym procesie; sama transkrypcja tego nie potwierdza."
+        ],
+        "sentiment": "positive",
+        "evidenceIds": [
+          "C015-S1",
+          "C015-S2",
+          "C015-S3",
+          "C015-S4",
+          "C015-S5",
+          "C015-S6",
+          "C015-S7"
+        ]
+      },
+      "promises": []
+    },
+    {
+      "id": "CALL-016",
+      "title": "Reklamacja jakości połączenia",
+      "category": "Reklamacje",
+      "agent": "Konsultant DEMO 01",
+      "customer": "Klient syntetyczny 16",
+      "startedAt": "2026-01-15T12:45:00Z",
+      "duration": 91,
+      "sentiment": "negative",
+      "segments": [
+        {
+          "id": "C016-S1",
+          "speaker": "agent",
+          "start": 0,
+          "end": 13,
+          "text": "Dzień dobry, centrum obsługi DEMO, w czym mogę pomóc?"
+        },
+        {
+          "id": "C016-S2",
+          "speaker": "customer",
+          "start": 13,
+          "end": 26,
+          "text": "Dzień dobry. Dzwonię w sprawie: reklamacja jakości połączenia. Potrzebuję pomocy."
+        },
+        {
+          "id": "C016-S3",
+          "speaker": "agent",
+          "start": 26,
+          "end": 39,
+          "text": "Proszę czekać na obsługę zgłoszenia."
+        },
+        {
+          "id": "C016-S4",
+          "speaker": "customer",
+          "start": 39,
+          "end": 52,
+          "text": "Sprawa jest dla mnie ważna. Chcę wiedzieć, jakie będą kolejne kroki."
+        },
+        {
+          "id": "C016-S5",
+          "speaker": "agent",
+          "start": 52,
+          "end": 65,
+          "text": "Zgłoszę problem do zespołu technicznego."
+        },
+        {
+          "id": "C016-S6",
+          "speaker": "customer",
+          "start": 65,
+          "end": 78,
+          "text": "Nie jestem zadowolony z obsługi. Problem wraca od tygodnia i rozważam rezygnację."
+        },
+        {
+          "id": "C016-S7",
+          "speaker": "agent",
+          "start": 78,
+          "end": 91,
+          "text": "Dziękuję za rozmowę. Życzę dobrego dnia."
+        }
+      ],
+      "audio": null,
+      "analysis": {
+        "modelVersion": "deterministic-demo-v1",
+        "analyzedAt": "2026-01-15T18:00:00Z",
+        "score": 75,
+        "criteria": [
+          {
+            "name": "Powitanie",
+            "points": 20,
+            "max": 20,
+            "evidenceId": "C016-S1"
+          },
+          {
+            "name": "Empatia",
+            "points": 0,
+            "max": 25,
+            "evidenceId": null
+          },
+          {
+            "name": "Kolejne kroki",
+            "points": 35,
+            "max": 35,
+            "evidenceId": "C016-S5"
+          },
+          {
+            "name": "Zamknięcie",
+            "points": 20,
+            "max": 20,
+            "evidenceId": "C016-S7"
+          }
+        ],
+        "summary": "Temat: Reklamacja jakości połączenia. Konsultant omówił kolejne kroki. Wynik działań po rozmowie nie jest potwierdzony.",
+        "risks": [
+          {
+            "label": "Ryzyko eskalacji",
+            "evidenceId": "C016-S6",
+            "text": "Nie jestem zadowolony z obsługi. Problem wraca od tygodnia i rozważam rezygnację."
+          },
+          {
+            "label": "Brak terminu działania",
+            "evidenceId": "C016-S5",
+            "text": "Zgłoszę problem do zespołu technicznego."
+          }
+        ],
+        "recommendations": [
+          "Potwierdź konkretny termin kolejnego kontaktu.",
+          "Sprawdź wykonanie deklaracji w zewnętrznym procesie; sama transkrypcja tego nie potwierdza."
+        ],
+        "sentiment": "negative",
+        "evidenceIds": [
+          "C016-S1",
+          "C016-S2",
+          "C016-S3",
+          "C016-S4",
+          "C016-S5",
+          "C016-S6",
+          "C016-S7"
+        ]
+      },
+      "promises": [
+        {
+          "id": "PROM-C016-S5",
+          "text": "Zgłoszę problem do zespołu technicznego.",
+          "owner": "Konsultant DEMO 01",
+          "deadline": null,
+          "confidence": 0.85,
+          "evidenceId": "C016-S5",
+          "status": "unverified"
+        }
+      ]
+    },
+    {
+      "id": "CALL-017",
+      "title": "Pytanie o ofertę firmową",
+      "category": "Oferta",
+      "agent": "Konsultant DEMO 02",
+      "customer": "Klient syntetyczny 17",
+      "startedAt": "2026-01-15T13:04:00Z",
+      "duration": 91,
+      "sentiment": "neutral",
+      "segments": [
+        {
+          "id": "C017-S1",
+          "speaker": "agent",
+          "start": 0,
+          "end": 13,
+          "text": "Dzień dobry, centrum obsługi DEMO, w czym mogę pomóc?"
+        },
+        {
+          "id": "C017-S2",
+          "speaker": "customer",
+          "start": 13,
+          "end": 26,
+          "text": "Dzień dobry. Dzwonię w sprawie: pytanie o ofertę firmową. Potrzebuję pomocy."
+        },
+        {
+          "id": "C017-S3",
+          "speaker": "agent",
+          "start": 26,
+          "end": 39,
+          "text": "Rozumiem. Proszę opisać, co się wydarzyło."
+        },
+        {
+          "id": "C017-S4",
+          "speaker": "customer",
+          "start": 39,
+          "end": 52,
+          "text": "Sprawa jest dla mnie ważna. Chcę wiedzieć, jakie będą kolejne kroki."
+        },
+        {
+          "id": "C017-S5",
+          "speaker": "agent",
+          "start": 52,
+          "end": 65,
+          "text": "Może Pan skontaktować się z działem sprzedaży w przyszłym tygodniu."
+        },
+        {
+          "id": "C017-S6",
+          "speaker": "customer",
+          "start": 65,
+          "end": 78,
+          "text": "Rozumiem. To ja zdecyduję, kiedy zadzwonić."
+        },
+        {
+          "id": "C017-S7",
+          "speaker": "agent",
+          "start": 78,
+          "end": 91,
+          "text": "Dziękuję za rozmowę. Życzę dobrego dnia."
+        }
+      ],
+      "audio": null,
+      "analysis": {
+        "modelVersion": "deterministic-demo-v1",
+        "analyzedAt": "2026-01-15T18:00:00Z",
+        "score": 75,
+        "criteria": [
+          {
+            "name": "Powitanie",
+            "points": 20,
+            "max": 20,
+            "evidenceId": "C017-S1"
+          },
+          {
+            "name": "Empatia",
+            "points": 25,
+            "max": 25,
+            "evidenceId": "C017-S3"
+          },
+          {
+            "name": "Kolejne kroki",
+            "points": 10,
+            "max": 35,
+            "evidenceId": null
+          },
+          {
+            "name": "Zamknięcie",
+            "points": 20,
+            "max": 20,
+            "evidenceId": "C017-S7"
+          }
+        ],
+        "summary": "Temat: Pytanie o ofertę firmową. Konsultant omówił kolejne kroki. Wynik działań po rozmowie nie jest potwierdzony.",
+        "risks": [],
+        "recommendations": [
+          "Utrzymaj jasne podsumowanie i potwierdzanie kolejnych kroków.",
+          "Sprawdź wykonanie deklaracji w zewnętrznym procesie; sama transkrypcja tego nie potwierdza."
+        ],
+        "sentiment": "neutral",
+        "evidenceIds": [
+          "C017-S1",
+          "C017-S2",
+          "C017-S3",
+          "C017-S4",
+          "C017-S5",
+          "C017-S6",
+          "C017-S7"
+        ]
+      },
+      "promises": []
+    },
+    {
+      "id": "CALL-018",
+      "title": "Zwrot zamówienia",
+      "category": "Zwroty",
+      "agent": "Konsultant DEMO 03",
+      "customer": "Klient syntetyczny 18",
+      "startedAt": "2026-01-15T13:23:00Z",
+      "duration": 91,
+      "sentiment": "positive",
+      "segments": [
+        {
+          "id": "C018-S1",
+          "speaker": "agent",
+          "start": 0,
+          "end": 13,
+          "text": "Dzień dobry, centrum obsługi DEMO, w czym mogę pomóc?"
+        },
+        {
+          "id": "C018-S2",
+          "speaker": "customer",
+          "start": 13,
+          "end": 26,
+          "text": "Dzień dobry. Dzwonię w sprawie: zwrot zamówienia. Potrzebuję pomocy."
+        },
+        {
+          "id": "C018-S3",
+          "speaker": "agent",
+          "start": 26,
+          "end": 39,
+          "text": "Rozumiem. Proszę opisać, co się wydarzyło."
+        },
+        {
+          "id": "C018-S4",
+          "speaker": "customer",
+          "start": 39,
+          "end": 52,
+          "text": "Sprawa jest dla mnie ważna. Chcę wiedzieć, jakie będą kolejne kroki."
+        },
+        {
+          "id": "C018-S5",
+          "speaker": "agent",
+          "start": 52,
+          "end": 65,
+          "text": "Wyślę instrukcję zwrotu w ciągu dwóch dni roboczych."
+        },
+        {
+          "id": "C018-S6",
+          "speaker": "customer",
+          "start": 65,
+          "end": 78,
+          "text": "Dziękuję, to wszystko wyjaśnia."
+        },
+        {
+          "id": "C018-S7",
+          "speaker": "agent",
+          "start": 78,
+          "end": 91,
+          "text": "Do usłyszenia. Życzę dobrego dnia."
+        }
+      ],
+      "audio": null,
+      "analysis": {
+        "modelVersion": "deterministic-demo-v1",
+        "analyzedAt": "2026-01-15T18:00:00Z",
+        "score": 80,
+        "criteria": [
+          {
+            "name": "Powitanie",
+            "points": 20,
+            "max": 20,
+            "evidenceId": "C018-S1"
+          },
+          {
+            "name": "Empatia",
+            "points": 25,
+            "max": 25,
+            "evidenceId": "C018-S3"
+          },
+          {
+            "name": "Kolejne kroki",
+            "points": 35,
+            "max": 35,
+            "evidenceId": "C018-S5"
+          },
+          {
+            "name": "Zamknięcie",
+            "points": 0,
+            "max": 20,
+            "evidenceId": null
+          }
+        ],
+        "summary": "Temat: Zwrot zamówienia. Konsultant omówił kolejne kroki. Wynik działań po rozmowie nie jest potwierdzony.",
+        "risks": [],
+        "recommendations": [
+          "Utrzymaj jasne podsumowanie i potwierdzanie kolejnych kroków.",
+          "Sprawdź wykonanie deklaracji w zewnętrznym procesie; sama transkrypcja tego nie potwierdza."
+        ],
+        "sentiment": "positive",
+        "evidenceIds": [
+          "C018-S1",
+          "C018-S2",
+          "C018-S3",
+          "C018-S4",
+          "C018-S5",
+          "C018-S6",
+          "C018-S7"
+        ]
+      },
+      "promises": [
+        {
+          "id": "PROM-C018-S5",
+          "text": "Wyślę instrukcję zwrotu w ciągu dwóch dni roboczych.",
+          "owner": "Konsultant DEMO 03",
+          "deadline": "w ciągu dwóch dni roboczych",
+          "confidence": 0.94,
+          "evidenceId": "C018-S5",
+          "status": "unverified"
+        }
+      ]
+    },
+    {
+      "id": "CALL-019",
+      "title": "Podwójna opłata za abonament",
+      "category": "Płatności",
+      "agent": "Konsultant DEMO 04",
+      "customer": "Klient syntetyczny 19",
+      "startedAt": "2026-01-15T13:42:00Z",
+      "duration": 91,
+      "sentiment": "negative",
+      "segments": [
+        {
+          "id": "C019-S1",
+          "speaker": "agent",
+          "start": 0,
+          "end": 13,
+          "text": "Dzień dobry, centrum obsługi DEMO, w czym mogę pomóc?"
+        },
+        {
+          "id": "C019-S2",
+          "speaker": "customer",
+          "start": 13,
+          "end": 26,
+          "text": "Dzień dobry. Dzwonię w sprawie: podwójna opłata za abonament. Potrzebuję pomocy."
+        },
+        {
+          "id": "C019-S3",
+          "speaker": "agent",
+          "start": 26,
+          "end": 39,
+          "text": "Rozumiem. Proszę opisać, co się wydarzyło."
+        },
+        {
+          "id": "C019-S4",
+          "speaker": "customer",
+          "start": 39,
+          "end": 52,
+          "text": "Sprawa jest dla mnie ważna. Chcę wiedzieć, jakie będą kolejne kroki."
+        },
+        {
+          "id": "C019-S5",
+          "speaker": "agent",
+          "start": 52,
+          "end": 65,
+          "text": "Przepraszam za podwójne naliczenie. Sprawdzę płatność i oddzwonię jutro do godziny 14:00."
+        },
+        {
+          "id": "C019-S6",
+          "speaker": "customer",
+          "start": 65,
+          "end": 78,
+          "text": "To kolejna pomyłka na fakturze. Jeśli nie zostanie wyjaśniona, złożę reklamację."
+        },
+        {
+          "id": "C019-S7",
+          "speaker": "agent",
+          "start": 78,
+          "end": 91,
+          "text": "Dziękuję za rozmowę. Życzę dobrego dnia."
+        }
+      ],
+      "audio": null,
+      "analysis": {
+        "modelVersion": "deterministic-demo-v1",
+        "analyzedAt": "2026-01-15T18:00:00Z",
+        "score": 100,
+        "criteria": [
+          {
+            "name": "Powitanie",
+            "points": 20,
+            "max": 20,
+            "evidenceId": "C019-S1"
+          },
+          {
+            "name": "Empatia",
+            "points": 25,
+            "max": 25,
+            "evidenceId": "C019-S3"
+          },
+          {
+            "name": "Kolejne kroki",
+            "points": 35,
+            "max": 35,
+            "evidenceId": "C019-S5"
+          },
+          {
+            "name": "Zamknięcie",
+            "points": 20,
+            "max": 20,
+            "evidenceId": "C019-S7"
+          }
+        ],
+        "summary": "Temat: Podwójna opłata za abonament. Konsultant omówił kolejne kroki. Wynik działań po rozmowie nie jest potwierdzony.",
+        "risks": [
+          {
+            "label": "Ryzyko eskalacji",
+            "evidenceId": "C019-S6",
+            "text": "To kolejna pomyłka na fakturze. Jeśli nie zostanie wyjaśniona, złożę reklamację."
+          }
+        ],
+        "recommendations": [
+          "Potwierdź konkretny termin kolejnego kontaktu.",
+          "Sprawdź wykonanie deklaracji w zewnętrznym procesie; sama transkrypcja tego nie potwierdza."
+        ],
+        "sentiment": "negative",
+        "evidenceIds": [
+          "C019-S1",
+          "C019-S2",
+          "C019-S3",
+          "C019-S4",
+          "C019-S5",
+          "C019-S6",
+          "C019-S7"
+        ]
+      },
+      "promises": [
+        {
+          "id": "PROM-C019-S5",
+          "text": "Przepraszam za podwójne naliczenie. Sprawdzę płatność i oddzwonię jutro do godziny 14:00.",
+          "owner": "Konsultant DEMO 04",
+          "deadline": "jutro do godziny 14:00",
+          "confidence": 0.94,
+          "evidenceId": "C019-S5",
+          "status": "unverified"
+        }
+      ]
+    },
+    {
+      "id": "CALL-020",
+      "title": "Zmiana terminu dostawy",
+      "category": "Dostawa",
+      "agent": "Konsultant DEMO 05",
+      "customer": "Klient syntetyczny 20",
+      "startedAt": "2026-01-15T14:01:00Z",
+      "duration": 91,
+      "sentiment": "neutral",
+      "segments": [
+        {
+          "id": "C020-S1",
+          "speaker": "agent",
+          "start": 0,
+          "end": 13,
+          "text": "Dzień dobry, centrum obsługi DEMO, w czym mogę pomóc?"
+        },
+        {
+          "id": "C020-S2",
+          "speaker": "customer",
+          "start": 13,
+          "end": 26,
+          "text": "Dzień dobry. Dzwonię w sprawie: zmiana terminu dostawy. Potrzebuję pomocy."
+        },
+        {
+          "id": "C020-S3",
+          "speaker": "agent",
+          "start": 26,
+          "end": 39,
+          "text": "Rozumiem. Proszę opisać, co się wydarzyło."
+        },
+        {
+          "id": "C020-S4",
+          "speaker": "customer",
+          "start": 39,
+          "end": 52,
+          "text": "Sprawa jest dla mnie ważna. Chcę wiedzieć, jakie będą kolejne kroki."
+        },
+        {
+          "id": "C020-S5",
+          "speaker": "agent",
+          "start": 52,
+          "end": 65,
+          "text": "Prześlę potwierdzenie zmiany terminu e-mailem do końca dnia."
+        },
+        {
+          "id": "C020-S6",
+          "speaker": "customer",
+          "start": 65,
+          "end": 78,
+          "text": "Dobrze, będę czekać na potwierdzenie."
+        },
+        {
+          "id": "C020-S7",
+          "speaker": "agent",
+          "start": 78,
+          "end": 91,
+          "text": "Dziękuję za rozmowę. Życzę dobrego dnia."
+        }
+      ],
+      "audio": null,
+      "analysis": {
+        "modelVersion": "deterministic-demo-v1",
+        "analyzedAt": "2026-01-15T18:00:00Z",
+        "score": 100,
+        "criteria": [
+          {
+            "name": "Powitanie",
+            "points": 20,
+            "max": 20,
+            "evidenceId": "C020-S1"
+          },
+          {
+            "name": "Empatia",
+            "points": 25,
+            "max": 25,
+            "evidenceId": "C020-S3"
+          },
+          {
+            "name": "Kolejne kroki",
+            "points": 35,
+            "max": 35,
+            "evidenceId": "C020-S5"
+          },
+          {
+            "name": "Zamknięcie",
+            "points": 20,
+            "max": 20,
+            "evidenceId": "C020-S7"
+          }
+        ],
+        "summary": "Temat: Zmiana terminu dostawy. Konsultant omówił kolejne kroki. Wynik działań po rozmowie nie jest potwierdzony.",
+        "risks": [],
+        "recommendations": [
+          "Utrzymaj jasne podsumowanie i potwierdzanie kolejnych kroków.",
+          "Sprawdź wykonanie deklaracji w zewnętrznym procesie; sama transkrypcja tego nie potwierdza."
+        ],
+        "sentiment": "neutral",
+        "evidenceIds": [
+          "C020-S1",
+          "C020-S2",
+          "C020-S3",
+          "C020-S4",
+          "C020-S5",
+          "C020-S6",
+          "C020-S7"
+        ]
+      },
+      "promises": [
+        {
+          "id": "PROM-C020-S5",
+          "text": "Prześlę potwierdzenie zmiany terminu e-mailem do końca dnia.",
+          "owner": "Konsultant DEMO 05",
+          "deadline": "do końca dnia",
+          "confidence": 0.94,
+          "evidenceId": "C020-S5",
+          "status": "unverified"
+        }
+      ]
+    },
+    {
+      "id": "CALL-021",
+      "title": "Aktywacja nowej usługi",
+      "category": "Usługi",
+      "agent": "Konsultant DEMO 01",
+      "customer": "Klient syntetyczny 21",
+      "startedAt": "2026-01-15T14:20:00Z",
+      "duration": 91,
+      "sentiment": "positive",
+      "segments": [
+        {
+          "id": "C021-S1",
+          "speaker": "agent",
+          "start": 0,
+          "end": 13,
+          "text": "Dzień dobry, centrum obsługi DEMO, w czym mogę pomóc?"
+        },
+        {
+          "id": "C021-S2",
+          "speaker": "customer",
+          "start": 13,
+          "end": 26,
+          "text": "Dzień dobry. Dzwonię w sprawie: aktywacja nowej usługi. Potrzebuję pomocy."
+        },
+        {
+          "id": "C021-S3",
+          "speaker": "agent",
+          "start": 26,
+          "end": 39,
+          "text": "Rozumiem. Proszę opisać, co się wydarzyło."
+        },
+        {
+          "id": "C021-S4",
+          "speaker": "customer",
+          "start": 39,
+          "end": 52,
+          "text": "Sprawa jest dla mnie ważna. Chcę wiedzieć, jakie będą kolejne kroki."
+        },
+        {
+          "id": "C021-S5",
+          "speaker": "agent",
+          "start": 52,
+          "end": 65,
+          "text": "Usługa jest już aktywna. Czy mogę pomóc w czymś jeszcze?"
+        },
+        {
+          "id": "C021-S6",
+          "speaker": "customer",
+          "start": 65,
+          "end": 78,
+          "text": "Nie, wszystko działa. Dziękuję za pomoc."
+        },
+        {
+          "id": "C021-S7",
+          "speaker": "agent",
+          "start": 78,
+          "end": 91,
+          "text": "Dziękuję za rozmowę. Życzę dobrego dnia."
+        }
+      ],
+      "audio": null,
+      "analysis": null,
+      "promises": []
+    },
+    {
+      "id": "CALL-022",
+      "title": "Reklamacja jakości połączenia",
+      "category": "Reklamacje",
+      "agent": "Konsultant DEMO 02",
+      "customer": "Klient syntetyczny 22",
+      "startedAt": "2026-01-15T14:39:00Z",
+      "duration": 91,
+      "sentiment": "negative",
+      "segments": [
+        {
+          "id": "C022-S1",
+          "speaker": "agent",
+          "start": 0,
+          "end": 13,
+          "text": "Dzień dobry, centrum obsługi DEMO, w czym mogę pomóc?"
+        },
+        {
+          "id": "C022-S2",
+          "speaker": "customer",
+          "start": 13,
+          "end": 26,
+          "text": "Dzień dobry. Dzwonię w sprawie: reklamacja jakości połączenia. Potrzebuję pomocy."
+        },
+        {
+          "id": "C022-S3",
+          "speaker": "agent",
+          "start": 26,
+          "end": 39,
+          "text": "Proszę czekać na obsługę zgłoszenia."
+        },
+        {
+          "id": "C022-S4",
+          "speaker": "customer",
+          "start": 39,
+          "end": 52,
+          "text": "Sprawa jest dla mnie ważna. Chcę wiedzieć, jakie będą kolejne kroki."
+        },
+        {
+          "id": "C022-S5",
+          "speaker": "agent",
+          "start": 52,
+          "end": 65,
+          "text": "Zgłoszę problem do zespołu technicznego."
+        },
+        {
+          "id": "C022-S6",
+          "speaker": "customer",
+          "start": 65,
+          "end": 78,
+          "text": "Nie jestem zadowolony z obsługi. Problem wraca od tygodnia i rozważam rezygnację."
+        },
+        {
+          "id": "C022-S7",
+          "speaker": "agent",
+          "start": 78,
+          "end": 91,
+          "text": "Dziękuję za rozmowę. Życzę dobrego dnia."
+        }
+      ],
+      "audio": null,
+      "analysis": null,
+      "promises": []
+    },
+    {
+      "id": "CALL-023",
+      "title": "Pytanie o ofertę firmową",
+      "category": "Oferta",
+      "agent": "Konsultant DEMO 03",
+      "customer": "Klient syntetyczny 23",
+      "startedAt": "2026-01-15T14:58:00Z",
+      "duration": 91,
+      "sentiment": "neutral",
+      "segments": [
+        {
+          "id": "C023-S1",
+          "speaker": "agent",
+          "start": 0,
+          "end": 13,
+          "text": "Dzień dobry, centrum obsługi DEMO, w czym mogę pomóc?"
+        },
+        {
+          "id": "C023-S2",
+          "speaker": "customer",
+          "start": 13,
+          "end": 26,
+          "text": "Dzień dobry. Dzwonię w sprawie: pytanie o ofertę firmową. Potrzebuję pomocy."
+        },
+        {
+          "id": "C023-S3",
+          "speaker": "agent",
+          "start": 26,
+          "end": 39,
+          "text": "Rozumiem. Proszę opisać, co się wydarzyło."
+        },
+        {
+          "id": "C023-S4",
+          "speaker": "customer",
+          "start": 39,
+          "end": 52,
+          "text": "Sprawa jest dla mnie ważna. Chcę wiedzieć, jakie będą kolejne kroki."
+        },
+        {
+          "id": "C023-S5",
+          "speaker": "agent",
+          "start": 52,
+          "end": 65,
+          "text": "Może Pan skontaktować się z działem sprzedaży w przyszłym tygodniu."
+        },
+        {
+          "id": "C023-S6",
+          "speaker": "customer",
+          "start": 65,
+          "end": 78,
+          "text": "Rozumiem. To ja zdecyduję, kiedy zadzwonić."
+        },
+        {
+          "id": "C023-S7",
+          "speaker": "agent",
+          "start": 78,
+          "end": 91,
+          "text": "Dziękuję za rozmowę. Życzę dobrego dnia."
+        }
+      ],
+      "audio": null,
+      "analysis": null,
+      "promises": []
+    },
+    {
+      "id": "CALL-024",
+      "title": "Zwrot zamówienia",
+      "category": "Zwroty",
+      "agent": "Konsultant DEMO 04",
+      "customer": "Klient syntetyczny 24",
+      "startedAt": "2026-01-15T15:17:00Z",
+      "duration": 91,
+      "sentiment": "positive",
+      "segments": [
+        {
+          "id": "C024-S1",
+          "speaker": "agent",
+          "start": 0,
+          "end": 13,
+          "text": "Dzień dobry, centrum obsługi DEMO, w czym mogę pomóc?"
+        },
+        {
+          "id": "C024-S2",
+          "speaker": "customer",
+          "start": 13,
+          "end": 26,
+          "text": "Dzień dobry. Dzwonię w sprawie: zwrot zamówienia. Potrzebuję pomocy."
+        },
+        {
+          "id": "C024-S3",
+          "speaker": "agent",
+          "start": 26,
+          "end": 39,
+          "text": "Rozumiem. Proszę opisać, co się wydarzyło."
+        },
+        {
+          "id": "C024-S4",
+          "speaker": "customer",
+          "start": 39,
+          "end": 52,
+          "text": "Sprawa jest dla mnie ważna. Chcę wiedzieć, jakie będą kolejne kroki."
+        },
+        {
+          "id": "C024-S5",
+          "speaker": "agent",
+          "start": 52,
+          "end": 65,
+          "text": "Wyślę instrukcję zwrotu w ciągu dwóch dni roboczych."
+        },
+        {
+          "id": "C024-S6",
+          "speaker": "customer",
+          "start": 65,
+          "end": 78,
+          "text": "Dziękuję, to wszystko wyjaśnia."
+        },
+        {
+          "id": "C024-S7",
+          "speaker": "agent",
+          "start": 78,
+          "end": 91,
+          "text": "Do usłyszenia. Życzę dobrego dnia."
+        }
+      ],
+      "audio": null,
+      "analysis": null,
+      "promises": []
+    },
+    {
+      "id": "CALL-025",
+      "title": "Podwójna opłata za abonament",
+      "category": "Płatności",
+      "agent": "Konsultant DEMO 05",
+      "customer": "Klient syntetyczny 25",
+      "startedAt": "2026-01-15T15:36:00Z",
+      "duration": 91,
+      "sentiment": "negative",
+      "segments": [
+        {
+          "id": "C025-S1",
+          "speaker": "agent",
+          "start": 0,
+          "end": 13,
+          "text": "Dzień dobry, centrum obsługi DEMO, w czym mogę pomóc?"
+        },
+        {
+          "id": "C025-S2",
+          "speaker": "customer",
+          "start": 13,
+          "end": 26,
+          "text": "Dzień dobry. Dzwonię w sprawie: podwójna opłata za abonament. Potrzebuję pomocy."
+        },
+        {
+          "id": "C025-S3",
+          "speaker": "agent",
+          "start": 26,
+          "end": 39,
+          "text": "Rozumiem. Proszę opisać, co się wydarzyło."
+        },
+        {
+          "id": "C025-S4",
+          "speaker": "customer",
+          "start": 39,
+          "end": 52,
+          "text": "Sprawa jest dla mnie ważna. Chcę wiedzieć, jakie będą kolejne kroki."
+        },
+        {
+          "id": "C025-S5",
+          "speaker": "agent",
+          "start": 52,
+          "end": 65,
+          "text": "Przepraszam za podwójne naliczenie. Sprawdzę płatność i oddzwonię jutro do godziny 14:00."
+        },
+        {
+          "id": "C025-S6",
+          "speaker": "customer",
+          "start": 65,
+          "end": 78,
+          "text": "To kolejna pomyłka na fakturze. Jeśli nie zostanie wyjaśniona, złożę reklamację."
+        },
+        {
+          "id": "C025-S7",
+          "speaker": "agent",
+          "start": 78,
+          "end": 91,
+          "text": "Dziękuję za rozmowę. Życzę dobrego dnia."
+        }
+      ],
+      "audio": null,
+      "analysis": null,
+      "promises": []
+    },
+    {
+      "id": "CALL-026",
+      "title": "Zmiana terminu dostawy",
+      "category": "Dostawa",
+      "agent": "Konsultant DEMO 01",
+      "customer": "Klient syntetyczny 26",
+      "startedAt": "2026-01-15T15:55:00Z",
+      "duration": 91,
+      "sentiment": "neutral",
+      "segments": [
+        {
+          "id": "C026-S1",
+          "speaker": "agent",
+          "start": 0,
+          "end": 13,
+          "text": "Dzień dobry, centrum obsługi DEMO, w czym mogę pomóc?"
+        },
+        {
+          "id": "C026-S2",
+          "speaker": "customer",
+          "start": 13,
+          "end": 26,
+          "text": "Dzień dobry. Dzwonię w sprawie: zmiana terminu dostawy. Potrzebuję pomocy."
+        },
+        {
+          "id": "C026-S3",
+          "speaker": "agent",
+          "start": 26,
+          "end": 39,
+          "text": "Rozumiem. Proszę opisać, co się wydarzyło."
+        },
+        {
+          "id": "C026-S4",
+          "speaker": "customer",
+          "start": 39,
+          "end": 52,
+          "text": "Sprawa jest dla mnie ważna. Chcę wiedzieć, jakie będą kolejne kroki."
+        },
+        {
+          "id": "C026-S5",
+          "speaker": "agent",
+          "start": 52,
+          "end": 65,
+          "text": "Prześlę potwierdzenie zmiany terminu e-mailem do końca dnia."
+        },
+        {
+          "id": "C026-S6",
+          "speaker": "customer",
+          "start": 65,
+          "end": 78,
+          "text": "Dobrze, będę czekać na potwierdzenie."
+        },
+        {
+          "id": "C026-S7",
+          "speaker": "agent",
+          "start": 78,
+          "end": 91,
+          "text": "Dziękuję za rozmowę. Życzę dobrego dnia."
+        }
+      ],
+      "audio": null,
+      "analysis": null,
+      "promises": []
+    },
+    {
+      "id": "CALL-027",
+      "title": "Aktywacja nowej usługi",
+      "category": "Usługi",
+      "agent": "Konsultant DEMO 02",
+      "customer": "Klient syntetyczny 27",
+      "startedAt": "2026-01-15T16:14:00Z",
+      "duration": 91,
+      "sentiment": "positive",
+      "segments": [
+        {
+          "id": "C027-S1",
+          "speaker": "agent",
+          "start": 0,
+          "end": 13,
+          "text": "Dzień dobry, centrum obsługi DEMO, w czym mogę pomóc?"
+        },
+        {
+          "id": "C027-S2",
+          "speaker": "customer",
+          "start": 13,
+          "end": 26,
+          "text": "Dzień dobry. Dzwonię w sprawie: aktywacja nowej usługi. Potrzebuję pomocy."
+        },
+        {
+          "id": "C027-S3",
+          "speaker": "agent",
+          "start": 26,
+          "end": 39,
+          "text": "Rozumiem. Proszę opisać, co się wydarzyło."
+        },
+        {
+          "id": "C027-S4",
+          "speaker": "customer",
+          "start": 39,
+          "end": 52,
+          "text": "Sprawa jest dla mnie ważna. Chcę wiedzieć, jakie będą kolejne kroki."
+        },
+        {
+          "id": "C027-S5",
+          "speaker": "agent",
+          "start": 52,
+          "end": 65,
+          "text": "Usługa jest już aktywna. Czy mogę pomóc w czymś jeszcze?"
+        },
+        {
+          "id": "C027-S6",
+          "speaker": "customer",
+          "start": 65,
+          "end": 78,
+          "text": "Nie, wszystko działa. Dziękuję za pomoc."
+        },
+        {
+          "id": "C027-S7",
+          "speaker": "agent",
+          "start": 78,
+          "end": 91,
+          "text": "Dziękuję za rozmowę. Życzę dobrego dnia."
+        }
+      ],
+      "audio": null,
+      "analysis": null,
+      "promises": []
+    },
+    {
+      "id": "CALL-028",
+      "title": "Reklamacja jakości połączenia",
+      "category": "Reklamacje",
+      "agent": "Konsultant DEMO 03",
+      "customer": "Klient syntetyczny 28",
+      "startedAt": "2026-01-15T16:33:00Z",
+      "duration": 91,
+      "sentiment": "negative",
+      "segments": [
+        {
+          "id": "C028-S1",
+          "speaker": "agent",
+          "start": 0,
+          "end": 13,
+          "text": "Dzień dobry, centrum obsługi DEMO, w czym mogę pomóc?"
+        },
+        {
+          "id": "C028-S2",
+          "speaker": "customer",
+          "start": 13,
+          "end": 26,
+          "text": "Dzień dobry. Dzwonię w sprawie: reklamacja jakości połączenia. Potrzebuję pomocy."
+        },
+        {
+          "id": "C028-S3",
+          "speaker": "agent",
+          "start": 26,
+          "end": 39,
+          "text": "Proszę czekać na obsługę zgłoszenia."
+        },
+        {
+          "id": "C028-S4",
+          "speaker": "customer",
+          "start": 39,
+          "end": 52,
+          "text": "Sprawa jest dla mnie ważna. Chcę wiedzieć, jakie będą kolejne kroki."
+        },
+        {
+          "id": "C028-S5",
+          "speaker": "agent",
+          "start": 52,
+          "end": 65,
+          "text": "Zgłoszę problem do zespołu technicznego."
+        },
+        {
+          "id": "C028-S6",
+          "speaker": "customer",
+          "start": 65,
+          "end": 78,
+          "text": "Nie jestem zadowolony z obsługi. Problem wraca od tygodnia i rozważam rezygnację."
+        },
+        {
+          "id": "C028-S7",
+          "speaker": "agent",
+          "start": 78,
+          "end": 91,
+          "text": "Dziękuję za rozmowę. Życzę dobrego dnia."
+        }
+      ],
+      "audio": null,
+      "analysis": null,
+      "promises": []
+    },
+    {
+      "id": "CALL-029",
+      "title": "Pytanie o ofertę firmową",
+      "category": "Oferta",
+      "agent": "Konsultant DEMO 04",
+      "customer": "Klient syntetyczny 29",
+      "startedAt": "2026-01-15T16:52:00Z",
+      "duration": 91,
+      "sentiment": "neutral",
+      "segments": [
+        {
+          "id": "C029-S1",
+          "speaker": "agent",
+          "start": 0,
+          "end": 13,
+          "text": "Dzień dobry, centrum obsługi DEMO, w czym mogę pomóc?"
+        },
+        {
+          "id": "C029-S2",
+          "speaker": "customer",
+          "start": 13,
+          "end": 26,
+          "text": "Dzień dobry. Dzwonię w sprawie: pytanie o ofertę firmową. Potrzebuję pomocy."
+        },
+        {
+          "id": "C029-S3",
+          "speaker": "agent",
+          "start": 26,
+          "end": 39,
+          "text": "Rozumiem. Proszę opisać, co się wydarzyło."
+        },
+        {
+          "id": "C029-S4",
+          "speaker": "customer",
+          "start": 39,
+          "end": 52,
+          "text": "Sprawa jest dla mnie ważna. Chcę wiedzieć, jakie będą kolejne kroki."
+        },
+        {
+          "id": "C029-S5",
+          "speaker": "agent",
+          "start": 52,
+          "end": 65,
+          "text": "Może Pan skontaktować się z działem sprzedaży w przyszłym tygodniu."
+        },
+        {
+          "id": "C029-S6",
+          "speaker": "customer",
+          "start": 65,
+          "end": 78,
+          "text": "Rozumiem. To ja zdecyduję, kiedy zadzwonić."
+        },
+        {
+          "id": "C029-S7",
+          "speaker": "agent",
+          "start": 78,
+          "end": 91,
+          "text": "Dziękuję za rozmowę. Życzę dobrego dnia."
+        }
+      ],
+      "audio": null,
+      "analysis": null,
+      "promises": []
+    },
+    {
+      "id": "CALL-030",
+      "title": "Zwrot zamówienia",
+      "category": "Zwroty",
+      "agent": "Konsultant DEMO 05",
+      "customer": "Klient syntetyczny 30",
+      "startedAt": "2026-01-15T17:11:00Z",
+      "duration": 91,
+      "sentiment": "positive",
+      "segments": [
+        {
+          "id": "C030-S1",
+          "speaker": "agent",
+          "start": 0,
+          "end": 13,
+          "text": "Dzień dobry, centrum obsługi DEMO, w czym mogę pomóc?"
+        },
+        {
+          "id": "C030-S2",
+          "speaker": "customer",
+          "start": 13,
+          "end": 26,
+          "text": "Dzień dobry. Dzwonię w sprawie: zwrot zamówienia. Potrzebuję pomocy."
+        },
+        {
+          "id": "C030-S3",
+          "speaker": "agent",
+          "start": 26,
+          "end": 39,
+          "text": "Rozumiem. Proszę opisać, co się wydarzyło."
+        },
+        {
+          "id": "C030-S4",
+          "speaker": "customer",
+          "start": 39,
+          "end": 52,
+          "text": "Sprawa jest dla mnie ważna. Chcę wiedzieć, jakie będą kolejne kroki."
+        },
+        {
+          "id": "C030-S5",
+          "speaker": "agent",
+          "start": 52,
+          "end": 65,
+          "text": "Wyślę instrukcję zwrotu w ciągu dwóch dni roboczych."
+        },
+        {
+          "id": "C030-S6",
+          "speaker": "customer",
+          "start": 65,
+          "end": 78,
+          "text": "Dziękuję, to wszystko wyjaśnia."
+        },
+        {
+          "id": "C030-S7",
+          "speaker": "agent",
+          "start": 78,
+          "end": 91,
+          "text": "Do usłyszenia. Życzę dobrego dnia."
+        }
+      ],
+      "audio": null,
+      "analysis": null,
+      "promises": []
+    }
+  ],
+  "audit": [
+    {
+      "id": "AUD-1",
+      "at": "2026-01-15T08:00:00Z",
+      "action": "Wczytano 30 fikcyjnych rozmów.",
+      "actor": "Demo system"
+    }
+  ]
+}
