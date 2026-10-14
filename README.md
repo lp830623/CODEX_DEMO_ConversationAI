@@ -1,5 +1,7 @@
 # CODEX_DEMO_ConversationAI
 
+> Gałąź ćwiczeniowa: funkcja do zaimplementowania celowo zwraca pusty wynik. Testy tej funkcji są czerwone. Pełne rozwiązanie znajdziesz na `main`.
+
 ![CI](https://github.com/lp830623/CODEX_DEMO_ConversationAI/actions/workflows/ci.yml/badge.svg)
 
 Analiza fikcyjnych rozmów: transkrypcje, jakość, ryzyka i Promise Tracker.

@@ -5,10 +5,8 @@ export type Conversation={id:string;title:string;category:string;agent:string;cu
 export type State={schemaVersion:number;mode:string;clock:string;conversations:Conversation[];audit:{id:string;at:string;action:string;actor:string}[]};
 export const sentimentLabel:Record<string,string>={negative:'Negatywny',neutral:'Neutralny',positive:'Pozytywny'};
 export function findPromises(c:Conversation):PromiseItem[]{
- return c.segments.filter(s=>s.speaker==='agent'&&/(?:^|\s)(oddzwonię|prześlę|wyślę|sprawdzę|zgłoszę|skontaktuję|przekażę)(?:\s|[.,!?]|$)/i.test(s.text)).map(s=>{
-  const deadline=s.text.match(/jutro(?: do godziny \d{1,2}:\d{2})?|do końca dnia|w ciągu (?:dwóch|\d+) dni roboczych/i)?.[0]||null;
-  return {id:`PROM-${s.id}`,text:s.text,owner:c.agent,deadline,confidence:deadline?0.94:0.85,evidenceId:s.id,status:'unverified'};
- });
+ // TODO: match backend semantics and make the exercise tests pass.
+ return [];
 }
 export function analyze(c:Conversation,clock:string){
  const agent=c.segments.filter(s=>s.speaker==='agent'),customer=c.segments.filter(s=>s.speaker==='customer');

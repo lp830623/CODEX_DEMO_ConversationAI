@@ -2,15 +2,8 @@ import re
 MODEL_VERSION = 'deterministic-demo-v1'
 
 def find_promises(conversation):
-    """Extract explicit first-person commitments; do not infer deadlines or completion."""
-    promises=[]
-    pattern=r'\b(oddzwonię|prześlę|wyślę|sprawdzę|zgłoszę|skontaktuję|przekażę)\b'
-    deadline=r'(jutro(?: do godziny \d{1,2}:\d{2})?|do końca dnia|w ciągu (?:dwóch|\d+) dni roboczych)'
-    for segment in conversation['segments']:
-        if segment['speaker']!='agent' or not re.search(pattern, segment['text'], re.I): continue
-        match=re.search(deadline,segment['text'],re.I)
-        promises.append({'id':f"PROM-{segment['id']}", 'text':segment['text'], 'owner':conversation['agent'], 'deadline':match.group(0) if match else None, 'confidence':0.94 if match else 0.85, 'evidenceId':segment['id'], 'status':'unverified'})
-    return promises
+    """TODO: extract explicit commitments with evidence, without inventing deadlines."""
+    return []
 
 def analyze_conversation(data, conversation_id):
     conv=next(c for c in data['conversations'] if c['id']==conversation_id)
